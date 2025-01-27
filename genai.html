@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI Showcase</title>
+    <style>
+        :root {
+            --maroon: #500000;
+            --white: #FFFFFF;
+            --light-gray: #F4F4F4;
+            --dark-gray: #333333;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--light-gray);
+        }
+        .navbar {
+            background-color: var(--maroon);
+            color: var(--white);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        .section {
+            background-color: var(--white);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: var(--maroon);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 1rem;
+        }
+        .gallery-item {
+            flex-basis: calc(33% - 1rem);
+            text-align: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .maze-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        #maze {
+            border: 2px solid var(--maroon);
+        }
+        button {
+            padding: 0.5rem 1rem;
+            background-color: var(--maroon);
+            color: var(--white);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #700000;
+        }
+        .prompt-box {
+            background-color: var(--maroon);
+            color: var(--white);
+            padding: 1rem;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="qualifications.html">Qualifications</a></li>
+            <li><a href="service.html">Service</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Generative AI Showcase</h1>
+
+        <section class="section">
+            <h2>In-Depth: Generative AI and Its Potential Benefits</h2>
+            <p>Generative AI refers to artificial intelligence systems capable of creating new content, including text, images, music, and even code. These sophisticated systems are trained on vast datasets, learning to generate original content that mimics the patterns and structures found in their training data.</p>
+            <h3>Key Benefits of Generative AI:</h3>
+            <ol>
+                <li><strong>Enhanced Creativity and Innovation:</strong> Generative AI serves as a powerful tool for inspiration, helping to overcome creative blocks and spark innovative ideas across various fields, from art and design to scientific research and product development.</li>
+                <li><strong>Increased Productivity:</strong> By automating content creation tasks, generative AI significantly reduces the time and effort required for activities like writing reports, creating marketing materials, or generating code snippets, allowing professionals to focus on higher-level tasks.</li>
+                <li><strong>Personalization at Scale:</strong> AI can create tailored content for individual users, enhancing user experiences in applications, e-commerce, and entertainment. This level of personalization was previously impossible at scale.</li>
+                <li><strong>Accelerated Problem Solving:</strong> In fields like drug discovery or materials science, generative AI can rapidly propose and test new solutions, potentially leading to breakthroughs at an unprecedented pace.</li>
+                <li><strong>Language Translation and Accessibility:</strong> Advanced language models improve translation services, making information more accessible across language barriers and potentially aiding in the preservation of endangered languages.</li>
+                <li><strong>Educational Support:</strong> Generative AI can create personalized learning materials, explanations, and practice problems, adapting to individual student needs and learning styles, thus enhancing educational outcomes.</li>
+                <li><strong>Content Summarization and Analysis:</strong> AI can quickly summarize large volumes of text or data, making it easier for humans to process and analyze information efficiently, a crucial capability in our information-rich world.</li>
+            </ol>
+            <p>As generative AI continues to evolve, its potential to transform industries and enhance human capabilities is immense. It promises a future where creativity and productivity are amplified by artificial intelligence, opening up new possibilities across numerous fields and aspects of life.</p>
+        </section>
+
+        <section class="section">
+            <h2>Potential Issues with Using AI</h2>
+            <p>While generative AI offers numerous benefits, it also presents several challenges and potential issues that need careful consideration. The following gallery illustrates some of these concerns:</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <p><strong>Copyright Infringement:</strong> AI-generated content may inadvertently reproduce copyrighted material, raising questions about ownership and fair use. There's ongoing debate about whether AI-generated works can be copyrighted and who owns the rights to such content.</p>
+                </div>
+                <div class="gallery-item">
+                    <p><strong>Misinformation and Deep Fakes:</strong> Generative AI can create highly convincing fake text, images, and videos, potentially exacerbating the spread of misinformation. Deep fakes could be used for fraud, defamation, or political manipulation.</p>
+                </div>
+                <div class="gallery-item">
+                    <p><strong>Privacy and Data Security:</strong> Training data for AI models may contain sensitive personal information, raising concerns about data privacy and potential misuse. AI systems might inadvertently reveal private information in their outputs.</p>
+                </div>
+                <div class="gallery-item">
+                    <p><strong>Bias and Fairness:</strong> AI models can perpetuate or amplify biases present in their training data, leading to unfair or discriminatory outputs. Ensuring diverse and representative training data is crucial but challenging.</p>
+                </div>
+                <div class="gallery-item">
+                    <p><strong>Job Displacement:</strong> As AI becomes more capable of generating content and performing creative tasks, certain jobs may be at risk of automation. This could lead to economic disruption and the need for workforce reskilling.</p>
+                </div>
+                <div class="gallery-item">
+                    <p><strong>Ethical Decision Making:</strong> AI systems may be involved in making or influencing important decisions, raising questions about accountability and ethical considerations. Ensuring AI aligns with human values and ethical principles is an ongoing challenge.</p>
+                </div>
+            </div>
+            <p>Addressing these issues requires ongoing research, ethical guidelines, legal frameworks, and public discourse to ensure that the development and use of generative AI technologies benefit society while minimizing potential harm.</p>
+        </section>
+
+        <section class="section">
+            <h2>AI Maze Generation Demo</h2>
+            <p>This demo showcases the capability of AI to generate random mazes. Each time you click the "Generate Maze" button, a new maze will be created, demonstrating the AI's ability to produce unique, complex structures on demand.</p>
+            <div class="maze-container">
+                <canvas id="maze" width="400" height="400"></canvas>
+                <button onclick="generateMaze()">Generate Maze</button>
+            </div>
+        </section>
+    </div>
+
+    <div class="prompt-box">
+        <p>Prompt: "Create an html page named "genai.html" with built-in css that contains a navbar linking to 4 other pages: index.html, portfolio.html, qualifications.html, and service.html. For this page Include multiple components and a description somewhere on the page that talks in depth about the generative AI and its potential benefits. Also include a section that goes in depth about potential issues with using AI, such as copyright infringement by incorporating a gallery. Create an interface that lets the user randomly generate different mazes as a demonstration of AI. At the bottom, include a text box that shows the prompt I used for this to show the user how I generated the page. For styling, create a webpage that is sleek, modern, with a color palette based on Texas A&M colors."</p>
+    </div>
+
+    <script>
+        function generateMaze() {
+            const canvas = document.getElementById('maze');
+            const ctx = canvas.getContext('2d');
+            const size = 20;
+            const cols = canvas.width / size;
+            const rows = canvas.height / size;
+
+            // Clear the canvas
+            ctx.fillStyle = 'white';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Generate maze
+            ctx.strokeStyle = '#500000';
+            ctx.lineWidth = 2;
+
+            for (let i = 0; i < cols; i++) {
+                for (let j = 0; j < rows; j++) {
+                    if (Math.random() > 0.7) {
+                        // Draw vertical line
+                        ctx.beginPath();
+                        ctx.moveTo(i * size, j * size);
+                        ctx.lineTo(i * size, (j + 1) * size);
+                        ctx.stroke();
+                    }
+                    if (Math.random() > 0.7) {
+                        // Draw horizontal line
+                        ctx.beginPath();
+                        ctx.moveTo(i * size, j * size);
+                        ctx.lineTo((i + 1) * size, j * size);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        // Generate initial maze
+        generateMaze();
+    </script>
+</body>
+</html>

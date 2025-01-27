@@ -1,0 +1,277 @@
+/* Colors: 
+#1F271B
+#0B4F6C
+#145C9E
+#CBB9A8
+#DCC7BE
+*/
+
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #DCC7BE;
+    font-family: Helvetica;
+}
+
+div {
+    /* width: 100%; */
+}
+
+.container {
+    /* border: purple solid 1px; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    /* border: black solid 1px; */
+    background-color: #CBB9A8;
+    display: flex;
+    justify-content: right;
+    /* margin: 10px; */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: #1F271B;
+    text-decoration: none;
+    padding: 10px;   
+}
+
+a:hover {
+    background-color: #DCC7BE;
+}
+
+#banner {
+    width: 98%;
+    height: 300px;
+    display: flex;
+    position: relative; 
+    align-items: center;
+}
+
+#banner::before {
+    content: "";
+    background-image: url(https://kgo-asset-cache.modolabs.net/texasam/production/resource_storage/proxy/modulepage/persona-_/experience/146abc96-a0b9-44e2-a561-ee34262d11e9_containerBackgroundImage_url_4c3bbdd5f3f7a184e3b6125e46a3c063/student-persona-button-background.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    filter: brightness(50%);
+}
+
+#title {
+    position: relative;
+    font-family: Helvetica;
+    font-size: 5rem;
+    color: whitesmoke;
+    text-align: center;
+    
+}
+
+
+.main-content {
+    max-width: 75%;
+    /* border: black solid 1px; */
+    /* background-color: #1F271B; */
+    border-left:#1F271B solid 1px;
+    border-right:#1F271B solid 1px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 30px;
+    color: #1F271B;
+}
+
+.list {
+    column-count: 3;
+}
+    
+#box1, #box3, #box5 { 
+    border-right: black solid 1px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#box2, #box4, #box6 { 
+    padding: 0px 10px;
+}
+
+#box2 {
+    display: flex;
+    margin: 5px;
+}
+
+#text {
+    width: 70%;
+    padding: 0px 10px;
+    /* text-align: */
+}
+
+#text1 {
+    width: 60%;
+    padding: 0px 10px;
+    /* text-align: */
+}
+
+#image {
+    width: 30%;
+}
+
+#img1 {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0px 10px;
+    border-radius: 25px;
+}
+
+
+.bottom-links {
+    background-color:#CBB9A8;
+    display:flex;
+    justify-content:left;
+    padding-left: 10px;
+}
+
+.links li {
+    display: inline;
+    margin: 50px;
+}
+
+.links a {
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    color:#1F271B;
+}
+
+.resume-pdf {
+    display: flex;
+    justify-content: center;
+    /* height: 100%; */
+}
+
+iframe {
+    width: 50%;
+}
+
+#qual {
+    width: 100%;
+    /* border: black solid 1px; */
+}
+
+.qualifications-content {
+    padding: 10px;
+    min-width: 80%;
+    max-width: 80%;
+    /* border: black solid 1px; */
+    border-radius: 25px;
+    background-color:#CBB9A8;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 30px;
+    padding-bottom: 30px;
+}
+
+#qual1, #qual3, #qual5 {
+    border-right: black solid 1px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#qual4, #qual6 {
+    padding-left: 20px;
+}
+
+#qual6 {
+    display: inline-flex;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.select button {
+    /* padding: 0px 40px; */
+    margin: 0px 40px;
+    height: 50%;
+    max-height: 50%;
+}
+
+.project-details {
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+    border-top: #3b2b09 solid 2px;
+    justify-content: center;
+}
+
+#project-desc {
+    width: 60%;
+    font-size: 1.2rem;
+    padding-right: 20px;
+}
+
+#project-img {
+    width: 20%;
+    padding-left: 20px;
+}
+
+.rounded-corner {
+    width: 70%;
+    max-width: 70%;
+    height: 50vh;
+    border-radius: 25px;
+    background-color:aliceblue;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.service-content {
+    /* border:brown solid 1px; */
+    min-width: 80%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#service {
+    /* border: blue solid 1px; */
+    /* display: block; */
+    /* justify-content: center; */
+}
+
+.service-div {
+    min-width: 70%;
+    max-width: 70%;
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    border:#3b2b09 solid 2px;
+    background-color:#CBB9A8;
+    justify-content: center;
+}
+
+#contributions {
+    display: block;
+}
+
+.project-text {
+    width: 70%;
+    display: flex;
+}

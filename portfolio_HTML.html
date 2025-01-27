@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testing</title>
+        <!-- <link rel="stylesheet" href="./styles.css"> -->
+    </head>
+    <body>
+        <div class="navbar"> <!-- Navigation Bar -->
+            <ul>
+                <li><a href="index_HTML.html">Home</a></li>
+                <li><a href="portfolio_HTML.html">Portfolio</a></li>
+                <li><a href="qualifications_HTML.html">Qualifications</a></li>
+                <li><a href="service_HTML.html">Service</a></li>
+                <li><a href="genai.html">AI</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>Technical Portfolio</h1>
+        </div>
+        <div class="container">
+            <div class="rounded-corner">
+                <div class="select">
+                    <button id="btn" onclick="prev()">Previous</button>
+                    <div class="">
+                        <h3 id="project-title">default</h3>
+                    </div>
+                    <button id="btn" onclick="next()">Next</button>
+                </div>
+                <div class="container">
+                    <div class="project-details">
+                        <p id="project-desc">blah blah blah</p>
+                        <img id="project-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <div class="container"> <!-- Github blah -->
+            <div class="project-text">
+                <div id="text">
+                    <h3>Future Projects</h3>
+                    <p>I am currently in the process of developing of web application for a research project
+                    I am under that involves processing videos of cotton plants and extracting important information
+                    such as GDD (growing degree day) via various ML models.
+                    </p>
+                </div>
+                <div id="image">
+                    <img id="img1" src="cotton.png">
+                </div>
+            </div>
+        </div>
+        <div class="bottom-links"> <!-- External Links -->
+            <p>You can find me here!</p>
+            <ul class="links">
+                <li><a href="https://www.linkedin.com/in/matthewqian54/">LinkedIn</a></li>
+                <li><a href="https://github.com/mqian0123">GitHub</a></li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
